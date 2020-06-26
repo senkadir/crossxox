@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Crossxox.GamePage">
+    <ContentPage.Content>
+
+        <AbsoluteLayout>
+
+            <StackLayout
+            AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
+            AbsoluteLayout.LayoutFlags="All"
+            BackgroundColor="#000">
+
+                <Frame HorizontalOptions="Center"
+                   VerticalOptions="CenterAndExpand"
+                   BackgroundColor="#000">
+                    <StackLayout>
+                        <Grid BackgroundColor="#fff">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="#000" />
+                            <Label Text="X" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="#fff" />
+
+                            <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="#000" />
+                            <Label Text="O" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor ="#fff"/>
+
+                            <BoxView Grid.Row="0" Grid.Column="2" BackgroundColor="#000" />
+                            <Label Text="X" Grid.Row="0" Grid.Column="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor ="#fff"/>
+
+                            <BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="#000" />
+                            <Label Text="X" Grid.Row="1" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor ="#fff"/>
+
+                            <BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="#000" />
+                            <Label Text="O" Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor ="#fff"/>
+
+                            <BoxView Grid.Row="1" Grid.Column="2" BackgroundColor="#000" />
+                            <Label Text="X" Grid.Row="1" Grid.Column="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor ="#fff"/>
+
+                            <BoxView Grid.Row="2" Grid.Column="0" BackgroundColor="#000" />
+                            <Label Text="X" Grid.Row="2" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor ="#fff"/>
+
+                            <BoxView Grid.Row="2" Grid.Column="1" BackgroundColor="#000" />
+                            <Label Text="O" Grid.Row="2" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor ="#fff"/>
+
+                            <BoxView Grid.Row="2" Grid.Column="2" BackgroundColor="#000" />
+                            <Label Text="X" Grid.Row="2" Grid.Column="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor ="#fff"/>
+
+
+                        </Grid>
+
+                    </StackLayout>
+                </Frame>
+            </StackLayout>
+
+        </AbsoluteLayout>
+
+    </ContentPage.Content>
+</ContentPage>
