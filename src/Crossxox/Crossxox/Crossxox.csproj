@@ -8,7 +8,6 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugType>portable</DebugType>
     <DebugSymbols>true</DebugSymbols>
-    <AndroidUseAapt2>false</AndroidUseAapt2>
   </PropertyGroup>
 
   <ItemGroup>
