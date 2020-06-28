@@ -17,7 +17,7 @@
                    VerticalOptions="CenterAndExpand"
                    BackgroundColor="#000">
                 <StackLayout>
-                    <Button Text="One Player" FontFamily="Default" x:Name="OnePlayerButton" Clicked="OnePlayerButtonClicked" />
+                    <Button Text="One Player" FontFamily="Default" x:Name="OnePlayerButton" Clicked="OnePlayerButtonClicked" FontSize="40"/>
                 </StackLayout>
             </Frame>
         </StackLayout>

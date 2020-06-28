@@ -7,64 +7,46 @@
              x:Class="Crossxox.GamePage">
     <ContentPage.Content>
 
-        <AbsoluteLayout>
+        <Grid BackgroundColor="#fff" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-            <StackLayout
-            AbsoluteLayout.LayoutBounds="0.0, 0.0, 1.0, 1.0"
-            AbsoluteLayout.LayoutFlags="All"
-            BackgroundColor="#000">
+            <BoxView Grid.Row="0" Grid.Column="0" />
+            <Button Grid.Row="0" Grid.Column="0" BackgroundColor="#000" FontFamily="Default" TextColor="#fff" x:Name="ZeroZero" Clicked="ZeroZero_Clicked" FontSize="50"/>
 
-                <Frame HorizontalOptions="Center"
-                   VerticalOptions="CenterAndExpand"
-                   BackgroundColor="#000">
-                    <StackLayout>
-                        <Grid BackgroundColor="#fff">
-                            <Grid.RowDefinitions>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                                <RowDefinition Height="*"/>
-                            </Grid.RowDefinitions>
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
+            <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="#000" />
+            <Button Grid.Row="0" Grid.Column="1" BackgroundColor="#000" FontFamily="Default" TextColor="#fff" x:Name="ZeroOne" Clicked="ZeroOne_Clicked" FontSize="50"/>
 
-                            <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="#000" />
-                            <Label Text="X" Grid.Row="0" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor="#fff" />
+            <BoxView Grid.Row="0" Grid.Column="2" BackgroundColor="#000" />
+            <Button Grid.Row="0" Grid.Column="2" BackgroundColor="#000" FontFamily="Default" TextColor="#fff" x:Name="ZeroTwo" Clicked="ZeroTwo_Clicked" FontSize="50"/>
 
-                            <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="#000" />
-                            <Label Text="O" Grid.Row="0" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor ="#fff"/>
+            <BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="#000" />
+            <Button Grid.Row="1" Grid.Column="0" BackgroundColor="#000" FontFamily="Default" TextColor="#fff" x:Name="OneZero" Clicked="OneZero_Clicked" FontSize="50"/>
 
-                            <BoxView Grid.Row="0" Grid.Column="2" BackgroundColor="#000" />
-                            <Label Text="X" Grid.Row="0" Grid.Column="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor ="#fff"/>
+            <BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="#000" />
+            <Button Grid.Row="1" Grid.Column="1" BackgroundColor="#000" FontFamily="Default" TextColor="#fff" x:Name="OneOne" Clicked="OneOne_Clicked" FontSize="50"/>
 
-                            <BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="#000" />
-                            <Label Text="X" Grid.Row="1" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor ="#fff"/>
+            <BoxView Grid.Row="1" Grid.Column="2" BackgroundColor="#000" />
+            <Button Grid.Row="1" Grid.Column="2" BackgroundColor="#000" FontFamily="Default" TextColor="#fff" x:Name="OneTwo" Clicked="OneTwo_Clicked" FontSize="50"/>
 
-                            <BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="#000" />
-                            <Label Text="O" Grid.Row="1" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor ="#fff"/>
+            <BoxView Grid.Row="2" Grid.Column="0" BackgroundColor="#000" />
+            <Button Grid.Row="2" Grid.Column="0" BackgroundColor="#000" FontFamily="Default" TextColor="#fff" x:Name="TwoZero" Clicked="TwoZero_Clicked" FontSize="50"/>
 
-                            <BoxView Grid.Row="1" Grid.Column="2" BackgroundColor="#000" />
-                            <Label Text="X" Grid.Row="1" Grid.Column="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor ="#fff"/>
+            <BoxView Grid.Row="2" Grid.Column="1" BackgroundColor="#000" />
+            <Button Grid.Row="2" Grid.Column="1" BackgroundColor="#000" FontFamily="Default" TextColor="#fff" x:Name="TwoOne" Clicked="TwoOne_Clicked" FontSize="50"/>
 
-                            <BoxView Grid.Row="2" Grid.Column="0" BackgroundColor="#000" />
-                            <Label Text="X" Grid.Row="2" Grid.Column="0" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor ="#fff"/>
-
-                            <BoxView Grid.Row="2" Grid.Column="1" BackgroundColor="#000" />
-                            <Label Text="O" Grid.Row="2" Grid.Column="1" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor ="#fff"/>
-
-                            <BoxView Grid.Row="2" Grid.Column="2" BackgroundColor="#000" />
-                            <Label Text="X" Grid.Row="2" Grid.Column="2" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" TextColor ="#fff"/>
+            <BoxView Grid.Row="2" Grid.Column="2" BackgroundColor="#000" />
+            <Button Grid.Row="2" Grid.Column="2" BackgroundColor="#000" FontFamily="Default" TextColor="#fff" x:Name="TwoTwo" Clicked="TwoTwo_Clicked" FontSize="50"/>
 
 
-                        </Grid>
-
-                    </StackLayout>
-                </Frame>
-            </StackLayout>
-
-        </AbsoluteLayout>
-
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
